@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+    <world name="pick and file robot">
+        <light type="directional" name="sun">
+        </light>
+        <model name="pick_file">
+            <!--Link da base do robô-->
+            <link name="base">
+                <pose>0 0 0 0 0 0</pose>
+            </link>
+            <joint name="base_to_shoulder" type="revolute">
+                <parent>base</parent>
+                <child>shoulder</child>
+                <pose>0 0 0 0 0 0</pose>
+                <axis>
+                    <xyz>0 0 1</xyz>
+                </axis>
+            </joint>
+            <!--Link do ombro-->
+            <link name="shoulder">
+                <pose>0 0 0 0 0 0</pose>
+            </link>
+            <!--Link do cotovelo-->
+            <link name="elbow">
+                <pose>0 0 0 0 0 0</pose>
+            </link>
+            <!--Link da mão-->
+            <link name="wrist">
+                <pose>0 0 0 0 0 0</pose>
+            </link>
+            <!--Link da garra-->
+            <link name="claw">
+                <pose>0 0 0 0 0 0</pose>
+            </link>
+
+        </model>
+    </world>
+</sdf>
+
+
+
